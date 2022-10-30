@@ -17,7 +17,7 @@ class Pumpkin(pygame.sprite.Sprite):
         self.sprites = []
         self.is_animating = False
         for i in range(0, 8): #sick ass for loop man
-            image = pygame.image.load("animations/"+f"pframe_{i}.png")
+            image = pygame.image.load("animations/pumpkin/"+f"pframe_{i}.png")
             self.sprites.append(image)
         self.current_sprite = 0
         self.image = self.sprites[self.current_sprite]
@@ -41,7 +41,7 @@ class Scream(pygame.sprite.Sprite):
         self.sprites = []
         self.is_animating = False
         for i in range(0, 7): #sick ass for loop man
-            image = pygame.image.load("animations/"+f"sframe_{i}.png")
+            image = pygame.image.load("animations/scream/"+f"sframe_{i}.png")
             scaled_image = pygame.transform.scale(image, (200,200))
             self.sprites.append(scaled_image)
         self.current_sprite = 0
@@ -66,7 +66,7 @@ class Bat(pygame.sprite.Sprite):
         self.sprites = []
         self.is_animating = False
         for i in range(0, 4): #sick ass for loop man
-            image = pygame.image.load("animations/"+f"bframe_{i}.png")
+            image = pygame.image.load("animations/bat/"+f"bframe_{i}.png")
             scaled_image = pygame.transform.scale(image, (250,250))
             self.sprites.append(scaled_image)
         self.current_sprite = 0
@@ -91,7 +91,7 @@ class s_Pumpkins(pygame.sprite.Sprite):
         self.sprites = []
         self.is_animating = False
         for i in range(0, 7): #sick ass for loop man
-            image = pygame.image.load("animations/"+f"psframe_{i}.png")
+            image = pygame.image.load("animations/s_pumpkins/"+f"psframe_{i}.png")
             scaled_image = pygame.transform.scale(image, (250,250))
             self.sprites.append(image)
         self.current_sprite = 0
@@ -151,7 +151,7 @@ def show_score(x,y):
     screen.blit(score, (x + 175, y + 90)) #printing the score
 
 # background
-background = pygame.image.load('background2.png') #choice of background1 or background 2
+background = pygame.image.load('backgrounds/background2.png') 
 scaled_background = pygame.transform.scale(background, (1440, 800))
 
 while True:
