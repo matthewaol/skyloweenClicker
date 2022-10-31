@@ -29,7 +29,7 @@ class Pumpkin(pygame.sprite.Sprite):
 
     def update(self):
         if self.is_animating == True:
-            self.current_sprite += .55 # adjust this number for animation speed 
+            self.current_sprite += .65 # adjust this number for animation speed 
             if self.current_sprite >=len(self.sprites):
                 self.current_sprite = 0
                 self.is_animating = False
@@ -104,7 +104,7 @@ class s_Pumpkins(pygame.sprite.Sprite):
 
     def update(self):
         if self.is_animating == True:
-            self.current_sprite += .1 # adjust this number for animation speed 
+            self.current_sprite += .4 # adjust this number for animation speed 
             if self.current_sprite >=len(self.sprites):
                 self.current_sprite = 0
                 self.is_animating = False
